@@ -13,6 +13,7 @@
         <module>keycloak</module>
         <module>encoding</module>
         <module>guice</module>
+        <module>java8</module>
     </modules>
 
     <properties>
