@@ -41,6 +41,11 @@ public class StreamTerminal {
         IntSummaryStatistics statistics = Stream.of(1, 2, 3, 4).collect(Collectors.summarizingInt(n -> n));
         assertThat(statistics.getAverage()).isEqualTo(2.5d);
         assertThat(statistics.getSum()).isEqualTo(10);
+
+        String joinResult = Stream.of(1, 2, 3, 4).map(n -> n+"").collect(Collectors.joining(",", "Pre- ", " -Post"));
+        assertThat(joinResult).isEqualTo("Pre- 1,2,3,4 -Post");
+
+
     }
 
 }
