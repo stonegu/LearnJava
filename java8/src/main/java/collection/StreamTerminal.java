@@ -30,13 +30,13 @@ public class StreamTerminal {
     @Test
     public void averageTest() {
         assertThat(IntStream.range(1, 5).average().getAsDouble()).isEqualTo(2.5d);
-        assertThat(Stream.of("1", "2", "3", "4").collect(Collectors.averagingInt(n -> Integer.parseInt(n)))).isEqualTo(2.5d);
-        assertThat(Stream.of(1, 2, 3, 4).collect(Collectors.averagingInt(n -> n))).isEqualTo(2.5d);
+//        assertThat(Stream.of("1", "2", "3", "4").collect(Collectors.averagingInt(n -> Integer.parseInt(n)))).isEqualTo(2.5d);
+//        assertThat(Stream.of(1, 2, 3, 4).collect(Collectors.averagingInt(n -> n))).isEqualTo(2.5d);
     }
 
     @Test
     public void sumTest() {
-        assertThat(Stream.of(1, 2, 3, 4).collect(Collectors.summingInt(n -> n))).isEqualTo(10);
+//        assertThat(Stream.of(1, 2, 3, 4).collect(Collectors.summingInt(n -> n))).isEqualTo(10);
 
         IntSummaryStatistics statistics = Stream.of(1, 2, 3, 4).collect(Collectors.summarizingInt(n -> n));
         assertThat(statistics.getAverage()).isEqualTo(2.5d);

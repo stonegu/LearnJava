@@ -15,7 +15,8 @@
         <module>guice</module>
         <module>java8</module>
         <module>algorithms</module>
-        <module>graphQl</module>
+        <!-- <module>graphQl</module> -->
+        <module>general</module>
     </modules>
 
     <properties>
