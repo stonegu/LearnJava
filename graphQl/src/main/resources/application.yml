@@ -1,1 +1,14 @@
-server.port=8000
+server:
+   port: 8000
+security:
+   oauth2:
+      client:
+         client-id: account
+         client-secret: 4fbdf446-1807-4f84-9e2b-de338e4cebe2
+         access-token-uri: http://localhost:8081/auth/realms/BIZ/protocol/openid-connect/token
+         user-authorization-uri: http://localhost:8081/auth/realms/BIZ/protocol/openid-connect/auth
+      resource:
+         id: account
+         token-info-uri: http://localhost:8081/auth/realms/BIZ/protocol/openid-connect/token/introspect
+         user-info-uri: http://localhost:8081/auth/realms/BIZ/protocol/openid-connect/userinfo
+         
