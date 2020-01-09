@@ -85,6 +85,8 @@ public class OptionGroupExample {
         	System.out.println(".......... extract");
         } else if (offers) {
         	System.out.println(".......... offers");
+        	System.out.println("...............option s: " + commandLine.getOptionValue("source"));
+        	System.out.println("...............option t: " + commandLine.getOptionValue("target"));
         }
 	    
 	}
